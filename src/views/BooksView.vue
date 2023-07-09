@@ -444,10 +444,7 @@ onMounted(() => {
       </Model>
     </Teleport>
 
-    <div
-      id="table"
-      class="relative max-w-screen overflow-x-scroll shadow-md sm:rounded-md"
-    >
+    <div id="table" class="relative max-w-screen overflow-x-auto shadow-md sm:rounded-md">
       <table class="w-full text-sm text-left">
         <thead class="text-sm text-gray-300 uppercase bg-gray-800">
           <tr>
