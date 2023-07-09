@@ -64,7 +64,7 @@ const deleteBook = async (bookId) => {
     if (error) throw error;
     alert("Book deleted successfully");
     console.log(data);
-    router.push({ name: "books" });
+    bookData.value = bookData.value.filter((book) => book.book_id !== bookId);
   } catch (error) {
     console.log(error);
   } finally {
