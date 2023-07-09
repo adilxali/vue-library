@@ -450,7 +450,7 @@ onMounted(() => {
       id="table"
       class="relative max-w-screen overflow-x-hidden shadow-md sm:rounded-md"
     >
-      <table class="w-9/12 text-sm text-left">
+      <table class="w-full text-sm text-left">
         <thead class="text-sm text-gray-300 uppercase bg-gray-800">
           <tr>
             <th class="px-3 py-3 border-r">
@@ -580,7 +580,7 @@ onMounted(() => {
                 >
                   Edit
                 </button>
-               
+
                 <button
                   @click.prevent="deleteBook(book.book_id)"
                   class="text-red-700 hover:bg-red-700 hover:text-white font-bold py-2 px-2 rounded-md"
