@@ -130,7 +130,7 @@ onMounted(() => {
           <form @submit.prevent="updateBook(book?.book_id)">
             <div class="space-y-6">
               <div class="border-b border-gray-900/10 pb-10">
-                <div class="mt-6 grid grid-colos-1 gap-x-6 gap-y-2 sm:grid-cols-6">
+                <div class="flex mt-2 sm:mt-4 gap-x-6 gap-y-2">
                   <div class="sm:col-span-3">
                     <label for="title" class="block text-sm font-medium text-gray-700"
                       >Title</label
@@ -172,7 +172,7 @@ onMounted(() => {
                     </div>
                   </div>
                 </div>
-                <div class="mt-10 grid grid-colos-1 gap-x-6 gap-y-2 sm:grid-cols-6">
+                <div class="flex mt-2 sm:mt-4 gap-x-6 gap-y-2">
                   <div class="sm:col-span-3">
                     <label for="isbn" class="block text-sm font-medium text-gray-700"
                       >ISBN</label
@@ -214,7 +214,7 @@ onMounted(() => {
                     </div>
                   </div>
                 </div>
-                <div class="mt-10 grid grid-colos-1 gap-x-6 gap-y-2 sm:grid-cols-6">
+                <div class="flex mt-2 sm:mt-4 gap-x-6 gap-y-2">
                   <div class="sm:col-span-3">
                     <label for="publisher" class="block text-sm font-medium text-gray-700"
                       >Publication</label
@@ -256,7 +256,7 @@ onMounted(() => {
                     </div>
                   </div>
                 </div>
-                <div class="mt-10 grid grid-colos-1 gap-x-6 gap-y-2 sm:grid-cols-6">
+                <div class="flex mt-2 sm:mt-4 gap-x-6 gap-y-2">
                   <div class="sm:col-span-3">
                     <label for="pages" class="block text-sm font-medium text-gray-700"
                       >Pages</label
@@ -298,7 +298,7 @@ onMounted(() => {
                     </div>
                   </div>
                 </div>
-                <div class="mt-10 grid grid-colos-1 gap-x-6 gap-y-2 sm:grid-cols-6">
+                <div class="flex mt-2 sm:mt-4 gap-x-6 gap-y-2">
                   <div class="sm:col-span-3">
                     <label
                       for="bill_number"
@@ -342,7 +342,7 @@ onMounted(() => {
                     </div>
                   </div>
                 </div>
-                <div class="mt-10 grid grid-colos-1 gap-x-6 gap-y-2 sm:grid-cols-6">
+                <div class="flex mt-2 sm:mt-4 gap-x-6 gap-y-2">
                   <div class="sm:col-span-3">
                     <label
                       for="class_number"
@@ -388,11 +388,11 @@ onMounted(() => {
                     </div>
                   </div>
                 </div>
-                <div class="mt-10 grid grid-colos-1 gap-x-6 gap-y-2 sm:grid-cols-6">
-                  <div class="col-span-6">
+                <div class="flex mt-2 sm:mt-4 gap-x-6 gap-y-2">
+                  <div>
                     <label
                       for="description"
-                      class="block text-sm font-medium leading-6 text-gray-900"
+                      class="block text-sm font-medium text-gray-900"
                       >Description</label
                     >
                     <div class="mt-2">
@@ -406,10 +406,8 @@ onMounted(() => {
                       ></textarea>
                     </div>
                   </div>
-                  <div class="col-span-6">
-                    <label
-                      for="remarks"
-                      class="block text-sm font-medium leading-6 text-gray-900"
+                  <div>
+                    <label for="remarks" class="block text-sm font-medium text-gray-900"
                       >Remarks</label
                     >
                     <div class="mt-2">
@@ -426,7 +424,7 @@ onMounted(() => {
                 </div>
               </div>
             </div>
-            <div class="mt-6 flex items-center justify-end gap-x-6">
+            <div class="mt-2 flex items-center justify-end gap-x-6">
               <button
                 @click="closeModel"
                 type="reset"
@@ -448,7 +446,7 @@ onMounted(() => {
 
     <div
       id="table"
-      class="relative max-w-screen overflow-x-hidden shadow-md sm:rounded-md"
+      class="relative max-w-screen overflow-x-scroll shadow-md sm:rounded-md"
     >
       <table class="w-full text-sm text-left">
         <thead class="text-sm text-gray-300 uppercase bg-gray-800">

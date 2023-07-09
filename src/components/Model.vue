@@ -14,7 +14,7 @@ defineEmits(["close"]);
     <div
       class="fixed top-0 left-0 z-50 flex justify-center items-center max-w-full w-full max-h-full backdrop-blur-sm backdrop-brightness-100 bg-gray-900 bg-opacity-50 md:inset-0 h-[calc(100%-1rem)] md:h-auto md:overflow-y-auto transition-opacity duration-300"
     >
-      <div class="relative w-full max-w-md max-h-full">
+      <div class="relative top-0 w-full max-w-md max-h-full h-9/12">
         <div class="relative bg-white rounded-lg shadow">
           <button
             @click="$emit('close', false)"
