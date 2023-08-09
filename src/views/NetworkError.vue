@@ -1,3 +1,12 @@
+<script setup>
+import { useRouter } from "vue-router";
+
+const router = useRouter();
+
+const retry = () => {
+  router.go(-1);
+};
+</script>
 <template>
   <div class="flex flex-col items-center justify-center h-screen">
     <svg
@@ -16,15 +25,10 @@
       connection and try again.
     </p>
     <button
+      @click="retry"
       class="px-6 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-500 transition duration-300 ease-in-out"
     >
       Retry
     </button>
   </div>
 </template>
-
-<style scoped>
-button {
-  cursor: pointer;
-}
-</style>

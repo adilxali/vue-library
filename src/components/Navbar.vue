@@ -77,10 +77,9 @@ const Navigate = () => {
         <!-- Logo -->
         <div class="flex items-center">
           <img
-            @click="goHome()"
             class="h-20 w-20 cursor-pointer"
             src="@/assets/Roorkee_Adventist_Logo_New-removebg-preview-e1653726521396.png"
-            alt="Your Company"
+            alt="Roorkee Adventist College"
           />
 
           <!-- Links -->
