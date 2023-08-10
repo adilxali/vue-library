@@ -56,7 +56,7 @@ onMounted(() => {
   </div>
   <div
     v-else
-    class="mx-auto flex justify-center flex-wrap sm:justify-normal max-w-7xl w-screen gap-2 mt-2"
+    class="mx-auto flex justify-center flex-wrap sm:justify-normal max-w-7xl w-full gap-2 mt-2"
   >
     <div
       class="flex justify-center items-center max-w-sm w-96 p-6 text-center bg-gray-900 border border-gray-200 rounded-lg shadow hover:bg-gray-800"
