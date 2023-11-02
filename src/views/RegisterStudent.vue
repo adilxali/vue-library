@@ -41,8 +41,9 @@ const addStd = async () => {
   } catch (error) {
     console.log(error.message);
   } finally {
+    alert("Student Added Successfully");
     loading.value = false;
-    router.push({ name: "Students" });
+    router.push({ name: "students" });
   }
 };
 </script>

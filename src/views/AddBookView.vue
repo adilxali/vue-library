@@ -37,6 +37,9 @@ const addBook = async () => {
       },
     ]);
     if (bookError) throw bookError;
+  } catch (error) {
+    alert(error.message);
+  } finally {
     alert("Book added successfully");
     title.value = "";
     author.value = "";
@@ -52,8 +55,6 @@ const addBook = async () => {
     book_number.value = "";
     description.value = "";
     remarks.value = "";
-  } catch (error) {
-    alert(error.message);
   }
 };
 </script>
